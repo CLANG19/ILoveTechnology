@@ -1,0 +1,17 @@
+package Lab3;
+
+import java.util.Scanner;
+
+public class removeString {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String name;
+		System.out.println("Enter a word to remove a given character from the word: ");
+		name = in.next();
+		System.out.println("Enter a letter to remove from the word: ");
+		String remove = in.next();
+		String removed = name.replaceAll(remove, "");
+		System.out.println(removed);
+	}
+}
