@@ -1,0 +1,23 @@
+public class MaxInteger {
+	public static void main(String[] args) {
+		
+		int max = max3(3, 5, 2);
+		int max1 = max3(15, 75, 2);
+		int max2 = max3(6, 22, 3);
+		System.out.println("Max result is: " + max);
+		System.out.println("Max1 result is: " + max1);
+		System.out.println("Max2 result is: " + max2);
+		
+	}
+	public static int max3 (int v1, int v2, int v3) {
+		int max = v1;
+		
+		if(v2 > max) {
+			max = v2;
+		}
+		if(v3 > max) {
+			max = v3;
+		}
+		return max;
+	}
+}
