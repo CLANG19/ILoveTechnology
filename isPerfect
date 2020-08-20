@@ -1,0 +1,25 @@
+
+public class isPerfect {
+	
+	public static boolean isFactor(int y, int y2) {
+		int sum = 0;
+		int n = 0;
+		int x = 0, z = 0;
+		
+		for (int i = 2; i * i <= n; i++)
+		{
+			if (isFactor(x,y) == true)
+			{
+				if(i * i !=n)
+					sum = sum + i + n / i;
+				else
+					sum = sum + i;
+			}
+		}
+		if (sum == n && n != 1)
+			return true;
+		
+		return false;
+	}
+
+}
