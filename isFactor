@@ -1,0 +1,19 @@
+
+public class isFactor {
+
+	public static void main(int x, int y) {
+		isFactor(x, y);
+	}
+	
+	public static boolean isFactor(int x, int y) {
+		int factor;
+		factor = x % y;
+		
+		if (factor>0 && 30%factor==0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+}
