@@ -1,0 +1,36 @@
+public class MedianInteger {
+
+	public static void main(String[] args) {
+		int median = median(564, 27, 142);
+		System.out.println(median);
+	}
+	public static int median(int v1, int v2, int v3) {
+		int total = v1 + v2 + v3;
+		int max = max3(v1, v2, v3);
+		int min = min3(v1, v2, v3);
+		int total1 = total - (max + min);
+		return total1;
+	}
+	public static int max3 (int v1, int v2, int v3) {
+		int max = v1;
+		
+		if(v2 > max) {
+			max = v2;
+		}
+		if(v3 > max) {
+			max = v3;
+		}
+		return max;
+	}
+	public static int min3 (int v1, int v2, int v3) {
+		int max = v1;
+		
+		if(v2 < max) {
+			max = v2;
+		}
+		if(v3 < max) {
+			max = v3;
+		}
+		return max;
+	}
+}
