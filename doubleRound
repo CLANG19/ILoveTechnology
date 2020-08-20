@@ -1,0 +1,13 @@
+package Lab2;
+import java.lang.Math;
+import java.util.Scanner;
+
+public class doubleRound {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a number with a decimal place: ");
+		double numb = in.nextDouble();
+		System.out.println("The number you entered rounded is: " + (Math.round(numb)));
+	}
+}
