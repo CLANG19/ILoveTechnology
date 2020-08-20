@@ -1,0 +1,30 @@
+
+public class isPrime {
+
+	public static boolean main(String[] args) {
+		isFactor(0, 0);
+		
+		int num = 49;
+		boolean prime = false;
+		for(int i = 2; i <= num/2; ++i)
+		{
+			if(num % i == 0)
+			{
+				prime = true;
+			}
+		}
+		return false;
+	}
+
+	public static boolean isFactor(int x, int y) {
+		int factor;
+		factor = x % y;
+		
+		if (factor>0 && 30%factor==0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+}
