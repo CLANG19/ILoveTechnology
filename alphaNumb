@@ -1,0 +1,16 @@
+package Lab2;
+
+import java.util.Scanner;
+
+public class alphaNumb {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a letter of the alphabet to display its numerical value: ");
+		String alpha = in.next();
+		char c = alpha.charAt(0);
+		
+		int numb = Character.getNumericValue(c);
+		System.out.println(numb);
+	}
+}
