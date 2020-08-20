@@ -1,0 +1,17 @@
+package Lab2;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class NewValue {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a whole number: ");
+		int numb = in.nextInt();
+		DecimalFormat df = new DecimalFormat("0.0");
+		System.out.println(df.format(numb));
+		
+	}
+
+}
