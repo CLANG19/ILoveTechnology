@@ -1,0 +1,23 @@
+public class MinInteger {
+	public static void main(String[] args) {
+		
+		int min = min3(3, 5, 2);
+		int min1 = min3(15, 75, 2);
+		int min2 = min3(6, 22, 3);
+		System.out.println("Min result is: " + min);
+		System.out.println("Min1 result is: " + min1);
+		System.out.println("Min2 result is: " + min2);
+		
+	}
+	public static int min3 (int v1, int v2, int v3) {
+		int max = v1;
+		
+		if(v2 < max) {
+			max = v2;
+		}
+		if(v3 < max) {
+			max = v3;
+		}
+		return max;
+	}
+}
