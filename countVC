@@ -1,0 +1,21 @@
+package Lab3;
+
+public class countVC {
+
+	public static void main(String[] args) {
+		int vCount = 0, cCount = 0;
+		String sent = "This sentence will have its vowels and consonants counted.";
+		sent = sent.toLowerCase();
+		
+		for(int i = 0; i < sent.length(); i++) {
+		if(sent.charAt(i) == 'a' || sent.charAt(i) == 'e' || sent.charAt(i) == 'i' || sent.charAt(i) == 'o' || sent.charAt(i) == 'u') {
+			vCount++;
+		}
+		else if(sent.charAt(i) >= 'a' && sent.charAt(i) <='z') {
+			cCount++;
+		}
+		}
+		System.out.println("Vowels: " + vCount);
+		System.out.println("Consonants: " + cCount);
+	}
+}
