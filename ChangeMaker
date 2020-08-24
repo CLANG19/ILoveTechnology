@@ -1,0 +1,55 @@
+package Projects;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ChangeMaker {
+
+	public static void main(String[] args) {
+		// Ask user for input of change requested
+		Scanner in = new Scanner(System.in);
+		int recieved;
+		System.out.print("Enter the amount of change: ");
+		recieved = in.nextInt();
+		
+		// Create variables for calculating the change that should be displayed.
+		int quarter, dime, nickel, pennie;
+		
+		quarter = recieved / 25;
+		recieved = recieved % 25;
+		
+		dime = recieved / 10;
+		recieved = recieved % 10;
+		
+		nickel = recieved / 5;
+		recieved = recieved % 5;
+		
+		pennie = recieved;
+		
+		// Determine if the change should be displayed and display the ones that pass.
+		if(quarter == 0) {
+			quarter = 0;
+		}
+		else {
+		    System.out.println(quarter + " Quarters");
+		}
+		if(dime == 0) {
+			dime = 0;
+		}
+		else {
+			System.out.println(dime + " Dimes");
+		}
+		if(nickel == 0) {
+			nickel = 0;
+		}
+		else {
+			System.out.println(nickel + " Nickles");
+		}
+		if(pennie == 0) {
+			pennie = 0;
+		}
+		else {
+			System.out.println(pennie + " Pennies");
+		}
+	}
+}
